@@ -1,18 +1,53 @@
+@keyframes heartbeat {
+	0% { transform: scale(1); }
+	50% { transform: scale(0.9); }
+	100% { transform: scale(1); }
+}
 @-webkit-keyframes heartbeat {
 	0% { -webkit-transform: scale(1); }
 	50% { -webkit-transform: scale(0.9); }
 	100% { -webkit-transform: scale(1); }
 }
+@-moz-keyframes heartbeat {
+	0% { -moz-transform: scale(1); }
+	50% { -moz-transform: scale(0.9); }
+	100% { -moz-transform: scale(1); }
+}
 
 .beatingheart:hover
 {
+	transform-origin:50% 50%;
+	animation-name: heartbeat;
+	animation-duration: 200ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	-webkit-transform-origin:50% 50%;
 	-webkit-animation-name: heartbeat;
 	-webkit-animation-duration: 200ms;
-	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
+
+	-moz-transform-origin:50% 50%;
+	-moz-animation-name: heartbeat;
+	-moz-animation-duration: 200ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
 }
 
+@keyframes wiggle {
+	0% { transform: translate(2px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(0px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(2px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(2px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 @-webkit-keyframes wiggle {
 	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
 	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
@@ -26,12 +61,37 @@
 	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
 	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }
+@-moz-keyframes wiggle {
+	0% { -moz-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -moz-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -moz-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -moz-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -moz-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -moz-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -moz-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -moz-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -moz-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -moz-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -moz-transform: translate(1px, -2px) rotate(-1deg); }
+}
 
 .wigglethis:hover {
+	transform-origin:50% 50%;
+	animation-name: wiggle;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	-webkit-transform-origin:50% 50%;
 	-webkit-animation-name: wiggle;
 	-webkit-animation-duration: 0.8s;
-	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
+
+	-moz-transform-origin:50% 50%;
+	-moz-animation-name: wiggle;
+	-moz-animation-duration: 0.8s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
 }
 .wigglethis {display:inline-block}
