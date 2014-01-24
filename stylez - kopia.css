@@ -16,14 +16,23 @@
 
 .beatingheart:hover
 {
-  animation: heartbeat 200ms linear 0s infinite;
-  transform-origin:50% 50%;
+	transform-origin:50% 50%;
+	animation-name: heartbeat;
+	animation-duration: 200ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 
-  -webkit-animation: heartbeat 200ms linear 0s infinite;
-  -webkit-transform-origin:50% 50%;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-name: heartbeat;
+	-webkit-animation-duration: 200ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 
-  -moz-animation: heartbeat 200ms linear 0s infinite;
-  -moz-transform-origin:50% 50%;
+	-moz-transform-origin:50% 50%;
+	-moz-animation-name: heartbeat;
+	-moz-animation-duration: 200ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
 }
 
 @keyframes wiggle {
@@ -67,14 +76,23 @@
 }
 
 .wigglethis:hover {
-  animation: wiggle 800ms linear 0s infinite;
-  transform-origin:50% 50%;
+	transform-origin:50% 50%;
+	animation-name: wiggle;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 
-  -webkit-animation: wiggle 800ms linear 0s infinite;
-  -webkit-transform-origin:50% 50%;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-name: wiggle;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 
-  -moz-animation: wiggle 800ms linear 0s infinite;
-  -moz-transform-origin:50% 50%;
+	-moz-transform-origin:50% 50%;
+	-moz-animation-name: wiggle;
+	-moz-animation-duration: 0.8s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
 }
 .wigglethis {display:inline-block}
 
@@ -82,13 +100,9 @@
      img {image-rendering:optimizeQuality; -ms-interpolation-mode:bicubic;}
 /* END MICROSOFT INTERNET EXPLORER WORKAROUND SECTION */
 
-* {margin:0;padding:0;overflow:hidden}
+* {margin:0;padding:0;overflow:hidden;}
 
-body {
-  background-color:black;
-  font-family: curs,'Amatic SC', Arial,cursive;
-  color: #c0c0c0;
-}
+body {background-color:black}
 
 .ease {transition:all 300ms ease;
        -webkit-transition:all 300ms ease;
@@ -99,7 +113,7 @@ body {
 .topbar {width:100%;height:64px;background-color:black}
 .topbar:hover {background-color:#333}
 
-.linkedin       {border:1px solid #333;padding:3px;margin:10px;overflow:visible;background-color:black;width:110px;height:36px;float:left}
+.linkedin       {border:1px solid #333;padding:3px;margin:10px;overflow:visible;background-color:black;width:110px;height:36px}
 .linkedin:hover {border-color:black;background-color:#333;padding:5px 5px 5px 5px;margin:8px;} 
 .linkedin:hover img {
   transform:rotate(360deg) translate(0,0) scale(1,1);
@@ -108,8 +122,6 @@ body {
   -ms-transform:rotate(360deg) translate(0,0) scale(1,1);
   -o-transform:rotate(360deg) translate(0,0) scale(1,1);
 }
-
-.icon32 {width:32px;padding:2px;}
 
 .flag1 {width:32px;transition-delay:200ms;
   transform:translate(-8px,-8px) scale(0);
@@ -120,22 +132,9 @@ body {
 }
 
 .flag2 {width:32px;transition-delay:100ms;
-  transform:translate(-42.5px,6px) scale(0);
-  -webkit-transform:translate(-42.5px,6px) scale(0.3);
-  -moz-transform:translate(-42.5px,6px) scale(0.3);
-  -ms-transform:translate(-42.5px,6px) scale(0.3);
-  -o-transform:translate(-42.5px,6px) scale(0.3);
+  transform:translate(-44px,8px) scale(0);
+  -webkit-transform:translate(-44px,8px) scale(0.3);
+  -moz-transform:translate(-44px,8px) scale(0.3);
+  -ms-transform:translate(-44px,8px) scale(0.3);
+  -o-transform:translate(-44px,8px) scale(0.3);
 }
-
-.contact2       {border:1px solid #333;padding:3px;margin:10px;overflow:visible;background-color:black;width:220px;height:36px;float:left;text-align:center}
-.contact2:hover {border-color:black;background-color:#333;padding:5px 5px 5px 5px;margin:8px;}
-.email {font-size:36px; color:#c3c3c3;}
-.email a:link    {color:#c3c3c3;text-decoration:none;}
-.email a:visited {color:#c3c3c3;text-decoration:none;}
-.email a:hover   {color:#c3c3c3;text-decoration:none;}
-.email a:active  {color:#c3c3c3;text-decoration:none;}
-
-.main1 {position:relative;top:0;left:0}
-.main1 .frist  {width:100%;position:relative;top:0;left:0}
-.main1 .sloppy {position:absolute;top:0;right:0;padding:20px}
-
