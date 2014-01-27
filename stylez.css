@@ -84,9 +84,12 @@
 
 /* START EXTRA CSS RESETS */
   * {margin:0;padding:0;overflow:hidden}
-  html {height:100%}
-  body {height:100%}
+  html {width:100%;height:100%}
+  body {width:100%;height:100%}
 /* END EXTRA CSS RESETS */
+
+
+:-webkit-full-screen {width:100%; height:100%} /* */
 
 body {
   background-color:black;
